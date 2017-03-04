@@ -14,7 +14,6 @@ python ci/opentimestamps-client/ots stamp \
 git config --global push.default simple
 git config --global user.email `git log --max-count=1 --format='%ae'`
 git config --global user.name `git log --max-count=1 --format='%an'`
-git checkout $TRAVIS_BRANCH
 git remote set-url origin git@github.com:greenelab/deep-review.git
 
 # Decrypt and add SSH key
